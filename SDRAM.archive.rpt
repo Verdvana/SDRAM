@@ -1,0 +1,108 @@
+Archive Project report for SDRAM
+Tue Feb 26 21:09:32 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Tue Feb 26 21:09:32 2019 ;
+; Revision Name          ; SDRAM                                 ;
+; Top-level Entity Name  ; SDRAM                                 ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory E:/DE1-SoC/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'E:/DE1-SoC/FPGA/SDRAM/SDRAM.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'SDRAM.archive.rpt'
+Info (23030): Evaluation of Tcl script d:/intelfpga/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Tue Feb 26 21:09:32 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++---------------------------------------------------------+
+; Files Archived                                          ;
++---------------------------------------------------------+
+; File Name                                               ;
++---------------------------------------------------------+
+; ../../DE1-SoC_Pin_Assignment.tcl                        ;
+; command.v                                               ;
+; control_interface.v                                     ;
+; d:/intelfpga/18.1/quartus/bin64/assignment_defaults.qdf ;
+; E:/DE1-SoC/DE1-SoC_Pin_Assignment.tcl                   ;
+; PLL.cmp                                                 ;
+; PLL.qip                                                 ;
+; PLL.sip                                                 ;
+; PLL.spd                                                 ;
+; PLL.v                                                   ;
+; PLL/PLL_0002.qip                                        ;
+; PLL/PLL_0002.v                                          ;
+; PLL_sim/PLL.vo                                          ;
+; SDRAM.qpf                                               ;
+; SDRAM.qsf                                               ;
+; SDRAM.v                                                 ;
+; sdram_control.v                                         ;
+; sdram_params.h                                          ;
+; Sdram_PLL.cmp                                           ;
+; Sdram_PLL.qip                                           ;
+; Sdram_PLL.sip                                           ;
+; Sdram_PLL.spd                                           ;
+; Sdram_PLL.v                                             ;
+; Sdram_PLL/Sdram_PLL_0002.qip                            ;
+; Sdram_PLL/Sdram_PLL_0002.v                              ;
+; Sdram_PLL_sim/Sdram_PLL.vo                              ;
+; Sdram_RD_FIFO.qip                                       ;
+; Sdram_RD_FIFO.v                                         ;
+; Sdram_RD_FIFO_bb.v                                      ;
+; Sdram_WR_FIFO.qip                                       ;
+; Sdram_WR_FIFO.v                                         ;
+; Sdram_WR_FIFO_bb.v                                      ;
+; segment.v                                               ;
++---------------------------------------------------------+
+
+

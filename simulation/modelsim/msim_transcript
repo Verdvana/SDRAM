@@ -1,0 +1,192 @@
+# Reading D:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do SDRAM_run_msim_rtl_verilog.do
+# if ![file isdirectory SDRAM_iputf_libs] {
+# 	file mkdir SDRAM_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL_sim/Sdram_PLL.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:58 on Feb 27,2019
+# vlog -reportprogress 300 E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL_sim/Sdram_PLL.vo 
+# -- Compiling module Sdram_PLL
+# 
+# Top level modules:
+# 	Sdram_PLL
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog "E:/DE1-SoC/FPGA/SDRAM/PLL_sim/PLL.vo"            
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:59 on Feb 27,2019
+# vlog -reportprogress 300 E:/DE1-SoC/FPGA/SDRAM/PLL_sim/PLL.vo 
+# -- Compiling module PLL
+# 
+# Top level modules:
+# 	PLL
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/DE1-SoC/FPGA/SDRAM {E:/DE1-SoC/FPGA/SDRAM/SDRAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:59 on Feb 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/DE1-SoC/FPGA/SDRAM" E:/DE1-SoC/FPGA/SDRAM/SDRAM.v 
+# -- Compiling module SDRAM
+# 
+# Top level modules:
+# 	SDRAM
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/DE1-SoC/FPGA/SDRAM {E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:59 on Feb 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/DE1-SoC/FPGA/SDRAM" E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v 
+# -- Compiling module Sdram_RD_FIFO
+# 
+# Top level modules:
+# 	Sdram_RD_FIFO
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/DE1-SoC/FPGA/SDRAM {E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:59 on Feb 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/DE1-SoC/FPGA/SDRAM" E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v 
+# -- Compiling module Sdram_WR_FIFO
+# 
+# Top level modules:
+# 	Sdram_WR_FIFO
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/DE1-SoC/FPGA/SDRAM {E:/DE1-SoC/FPGA/SDRAM/segment.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:59 on Feb 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/DE1-SoC/FPGA/SDRAM" E:/DE1-SoC/FPGA/SDRAM/segment.v 
+# -- Compiling module segment
+# 
+# Top level modules:
+# 	segment
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/DE1-SoC/FPGA/SDRAM {E:/DE1-SoC/FPGA/SDRAM/control_interface.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:59 on Feb 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/DE1-SoC/FPGA/SDRAM" E:/DE1-SoC/FPGA/SDRAM/control_interface.v 
+# -- Compiling module control_interface
+# 
+# Top level modules:
+# 	control_interface
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/DE1-SoC/FPGA/SDRAM {E:/DE1-SoC/FPGA/SDRAM/sdram_control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:59 on Feb 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/DE1-SoC/FPGA/SDRAM" E:/DE1-SoC/FPGA/SDRAM/sdram_control.v 
+# -- Compiling module Sdram_Control
+# 
+# Top level modules:
+# 	Sdram_Control
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/DE1-SoC/FPGA/SDRAM {E:/DE1-SoC/FPGA/SDRAM/command.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:59 on Feb 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/DE1-SoC/FPGA/SDRAM" E:/DE1-SoC/FPGA/SDRAM/command.v 
+# -- Compiling module command
+# 
+# Top level modules:
+# 	command
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlib PLL
+# vmap PLL PLL
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap PLL PLL 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work PLL +incdir+E:/DE1-SoC/FPGA/SDRAM/PLL {E:/DE1-SoC/FPGA/SDRAM/PLL/PLL_0002.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:30:59 on Feb 27,2019
+# vlog -reportprogress 300 -vlog01compat -work PLL "+incdir+E:/DE1-SoC/FPGA/SDRAM/PLL" E:/DE1-SoC/FPGA/SDRAM/PLL/PLL_0002.v 
+# -- Compiling module PLL_0002
+# 
+# Top level modules:
+# 	PLL_0002
+# End time: 19:30:59 on Feb 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.SDRAM
+# vsim work.SDRAM 
+# Start time: 19:31:14 on Feb 27,2019
+# Loading work.SDRAM
+# ** Error: (vsim-3033) E:/DE1-SoC/FPGA/SDRAM/SDRAM.v(74): Instantiation of 'PLL_0002' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SDRAM File: E:/DE1-SoC/FPGA/SDRAM/SDRAM.v
+#         Searched libraries:
+#             E:/DE1-SoC/FPGA/SDRAM/simulation/modelsim/rtl_work
+# Loading work.Sdram_Control
+# ** Error: (vsim-3033) E:/DE1-SoC/FPGA/SDRAM/sdram_control.v(131): Instantiation of 'Sdram_PLL_0002' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SDRAM/u1 File: E:/DE1-SoC/FPGA/SDRAM/sdram_control.v
+#         Searched libraries:
+#             E:/DE1-SoC/FPGA/SDRAM/simulation/modelsim/rtl_work
+# Loading work.control_interface
+# Loading work.command
+# Loading work.Sdram_WR_FIFO
+# ** Error: (vsim-3033) E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v(70): Instantiation of 'dcfifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SDRAM/u1/u_write_fifo File: E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v
+#         Searched libraries:
+#             E:/DE1-SoC/FPGA/SDRAM/simulation/modelsim/rtl_work
+# Loading work.Sdram_RD_FIFO
+# ** Error: (vsim-3033) E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v(70): Instantiation of 'dcfifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SDRAM/u1/u_read_fifo File: E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v
+#         Searched libraries:
+#             E:/DE1-SoC/FPGA/SDRAM/simulation/modelsim/rtl_work
+# Loading work.segment
+# Error loading design
+# End time: 19:31:15 on Feb 27,2019, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+vsim work.command
+# vsim work.command 
+# Start time: 19:32:50 on Feb 27,2019
+# Loading work.command
+vsim work.SDRAM
+# End time: 19:33:40 on Feb 27,2019, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 0
+# vsim work.SDRAM 
+# Start time: 19:33:40 on Feb 27,2019
+# Loading work.SDRAM
+# ** Error: (vsim-3033) E:/DE1-SoC/FPGA/SDRAM/SDRAM.v(74): Instantiation of 'PLL_0002' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SDRAM File: E:/DE1-SoC/FPGA/SDRAM/SDRAM.v
+#         Searched libraries:
+#             E:/DE1-SoC/FPGA/SDRAM/simulation/modelsim/rtl_work
+# Loading work.Sdram_Control
+# ** Error: (vsim-3033) E:/DE1-SoC/FPGA/SDRAM/sdram_control.v(131): Instantiation of 'Sdram_PLL_0002' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SDRAM/u1 File: E:/DE1-SoC/FPGA/SDRAM/sdram_control.v
+#         Searched libraries:
+#             E:/DE1-SoC/FPGA/SDRAM/simulation/modelsim/rtl_work
+# Loading work.control_interface
+# Loading work.command
+# Loading work.Sdram_WR_FIFO
+# ** Error: (vsim-3033) E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v(70): Instantiation of 'dcfifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SDRAM/u1/u_write_fifo File: E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v
+#         Searched libraries:
+#             E:/DE1-SoC/FPGA/SDRAM/simulation/modelsim/rtl_work
+# Loading work.Sdram_RD_FIFO
+# ** Error: (vsim-3033) E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v(70): Instantiation of 'dcfifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SDRAM/u1/u_read_fifo File: E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v
+#         Searched libraries:
+#             E:/DE1-SoC/FPGA/SDRAM/simulation/modelsim/rtl_work
+# Loading work.segment
+# Error loading design
+# End time: 19:33:41 on Feb 27,2019, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0

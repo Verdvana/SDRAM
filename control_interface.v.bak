@@ -1,0 +1,33 @@
+module control_interface(
+					input					clk_50m,		//时钟
+					input					rst_n,		//复位
+					input		  [2:0]	cmd,			//命令输入
+					input 	  [22:0]	addr,       //地址输入
+					input 				ref_ack,		//执行更新指令
+					input					init_ack,	//执行初始化指令
+					input					cm_ack,		//执行指令
+					
+					output reg 			nop,			//译码出“NOP”指令
+					output reg			read,			//译码出“读”指令
+					output reg			write,		//译码出“写”指令
+					output reg			refresh,		//初始化“更新”指令
+					output reg			precharge,	//初始化“预充电”指令
+					output reg			load_mode,	//初始化“模式设定”指令
+					output reg [22:0] saddr,		//地址输出
+					output reg 			ref_req,		//正常读写时“更新”指令
+					output reg 			init_req,	//初始化动作
+					output reg			cmd_ack		//开始执行指令
+					
+);
+
+
+reg [15:0]	timer;
+reg [15:0]	init_timer;
+
+
+always@(posedge clk_50m or negedge rst_n)
+begin
+	
+end
+
+

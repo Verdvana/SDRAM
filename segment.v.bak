@@ -1,0 +1,22 @@
+module segment(
+input        [3:0] cnt, 
+output  reg  [6:0] HEX
+);
+assign  scan=4'b0001; 
+always@(cnt) 
+begin   
+  case(cnt)   
+    4'b0001:HEX= 7'b1111001;	   // ---t---- 
+	 4'b0010:HEX= 7'b0100100; 	// |	  |
+	 4'b0011:HEX= 7'b0110000; 	// lt	 rt 
+	 4'b0100:HEX= 7'b0011001; 	// |	  |
+	 4'b0101:HEX= 7'b0010010; 	// ---m----
+	 4'b0110:HEX= 7'b0000010; 	// |	  |
+	 4'b0111:HEX= 7'b1111000; 	// lb	 rb
+	 4'b1000:HEX= 7'b0000000; 	// |	  |
+	 4'b1001:HEX= 7'b0011000; 	// ---b----
+	 4'b1010:HEX= 7'b1000000;
+	 default:HEX= 7'b1000000;  
+  endcase 
+ end 
+endmodule 

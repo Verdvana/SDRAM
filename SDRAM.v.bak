@@ -1,0 +1,105 @@
+module SDRAM (
+		input 			clk_50m,
+		input			rst_n，
+
+		input	[2:0]	key,
+
+		output	[6:0]	hex0,
+		output	[6:0]	hex1,
+		output	[6:0]	hex2,
+		output	[6:0]	hex3,
+
+		output	[12:0]	sdram_addr,
+		output	[1:0]	sdram_ba,
+		output			sdram_cas_n,
+		output			sdram_cke,
+		output			sdram_clk,
+		output			sdram_cs_n,
+		input	[31:0]	sdram_dq,
+		output	[3:0]	sdram_dqm,
+		output			sdram_ras_n,
+		output			sdram_we_n		
+);
+
+reg		[7:0]	counter;
+reg		[1:0]	key1_dly,key2_dly;
+reg		[15:0]	display_latch;
+
+
+wire	[15:0]	display;
+wire			read;
+
+reg				latch;
+
+wire			counter_max;
+
+reg				wr1_wen;
+
+wire			clk_27m;
+
+
+assign	counter_max = &counter;
+assign	write = key1_dly[1] && !key1_dly[0];
+assign  read  = key2_dly[1] && !key2_dly[0];
+
+always @ (posedge clk_27m or negedge rst_n)
+begin
+    if (!rst_n)
+    begin
+    	key1_dly <= 2'b11;
+    	key2_dly <= 2'b11;
+    	counter <= 0;
+    	wr1_wen <= 1'b0;
+    	latch <= 1'b0;
+    end
+    else	
+    begin
+      key1_dly <= {key1_dly[0],KEY[0]};
+      key2_dly <= {key2_dly[0],KEY[1]};
+	    if (wr1_wen)
+	       counter <= counter + 1;
+      if (write)
+         wr1_wen <= 1'b1;
+      else if (counter_max)
+      	 wr1_wen <= 1'b0;
+      latch <= read;
+      if (latch)
+         display_latch <= display;
+    end
+end
+
+
+Sdram_Control	u1	
+	(	//	HOST Side
+						  .ref_clk(clk_27m),
+						  .rst_n(1'b1),
+							//	FIFO Write Side 1
+						  .wr1_data({8'b0, counter}),
+							.wr1(wr1_wen),
+							.wr1_addr(0),
+							.wr1_max_addr(256),
+							.wr1_length(9'h40),
+							.wr1_load(!rst_n),
+							.wr1_clk(clk_27m),
+							//	FIFO Read Side 1
+						  .rd1_data(display),
+				      .rd1(read),
+				      .rd1_addr(0),	
+							.rd1_max_addr(256),
+							.rd1_length(9'h40),
+				      rd1_load(!rst_n || wr1_wen),
+							.rd1_clk(clk_27m),
+							//	SDRAM Side
+						  .sa(sdram_sa),
+						  .ba(sdram_ba),
+						  .cs_n(sdram_cs_n),
+						  .cke(sdram_cke),
+						  .ras_n(sdram_ras_n),
+				      .cas_n(sdram_cas_n),
+				      .we_n(sdram_we_n),
+						  .dq(sdram_dq[15:0]),
+				      .dqm({sdram_dqm[1:0]}),
+							.sdr_clk(sdram_clk)	
+	);
+
+endmodule

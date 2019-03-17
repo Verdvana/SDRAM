@@ -1,0 +1,33 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/DE1-SoC/FPGA/SDRAM/simulation/modelsim
+vPLL_0002
+!s110 1551267059
+!i10b 1
+!s100 2bY5gFjOID84iEkl<ElRg2
+I>Bm3MBc6e7c2`:K_JzoeF2
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1551176386
+8E:/DE1-SoC/FPGA/SDRAM/PLL/PLL_0002.v
+FE:/DE1-SoC/FPGA/SDRAM/PLL/PLL_0002.v
+L0 2
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1551267059.000000
+!s107 E:/DE1-SoC/FPGA/SDRAM/PLL/PLL_0002.v|
+!s90 -reportprogress|300|-vlog01compat|-work|PLL|+incdir+E:/DE1-SoC/FPGA/SDRAM/PLL|E:/DE1-SoC/FPGA/SDRAM/PLL/PLL_0002.v|
+!i113 1
+o-vlog01compat -work PLL
+!s92 -vlog01compat -work PLL +incdir+E:/DE1-SoC/FPGA/SDRAM/PLL
+tCvgOpt 0
+n@p@l@l_0002

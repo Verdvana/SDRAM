@@ -1,0 +1,213 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/DE1-SoC/FPGA/SDRAM/simulation/modelsim
+vcommand
+Z1 !s110 1551267059
+!i10b 1
+!s100 kzKKUI0NoH2FSkHOJBoI[2
+IU`GL7@4=R<j2`[1UZJ;Cl2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1551254920
+8E:/DE1-SoC/FPGA/SDRAM/command.v
+FE:/DE1-SoC/FPGA/SDRAM/command.v
+Z4 FE:/DE1-SoC/FPGA/SDRAM/Sdram_Params.h
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1551267059.000000
+!s107 E:/DE1-SoC/FPGA/SDRAM/Sdram_Params.h|E:/DE1-SoC/FPGA/SDRAM/command.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/DE1-SoC/FPGA/SDRAM|E:/DE1-SoC/FPGA/SDRAM/command.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+E:/DE1-SoC/FPGA/SDRAM
+Z9 tCvgOpt 0
+vcontrol_interface
+R1
+!i10b 1
+!s100 G@3lFnH4EnT;=f>gIQQg>1
+I>FR=nCgX3@B[OAz0;0_240
+R2
+R0
+R3
+8E:/DE1-SoC/FPGA/SDRAM/control_interface.v
+FE:/DE1-SoC/FPGA/SDRAM/control_interface.v
+R4
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/DE1-SoC/FPGA/SDRAM/Sdram_Params.h|E:/DE1-SoC/FPGA/SDRAM/control_interface.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/DE1-SoC/FPGA/SDRAM|E:/DE1-SoC/FPGA/SDRAM/control_interface.v|
+!i113 1
+R7
+R8
+R9
+vPLL
+R1
+!i10b 1
+!s100 ?=:]EDkJlX69o[imIN1oC3
+IGNFKfR_2_EMU_U9IVn_k43
+R2
+R0
+w1551176398
+8E:/DE1-SoC/FPGA/SDRAM/PLL_sim/PLL.vo
+FE:/DE1-SoC/FPGA/SDRAM/PLL_sim/PLL.vo
+Z10 L0 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/DE1-SoC/FPGA/SDRAM/PLL_sim/PLL.vo|
+!s90 -reportprogress|300|E:/DE1-SoC/FPGA/SDRAM/PLL_sim/PLL.vo|
+!i113 1
+R9
+n@p@l@l
+vSDRAM
+R1
+!i10b 1
+!s100 8AAn<W7FjPiW9HGQdKUKT2
+Iocha0jeEQ90JjWa0AmJiK0
+R2
+R0
+w1551266747
+8E:/DE1-SoC/FPGA/SDRAM/SDRAM.v
+FE:/DE1-SoC/FPGA/SDRAM/SDRAM.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/DE1-SoC/FPGA/SDRAM/SDRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/DE1-SoC/FPGA/SDRAM|E:/DE1-SoC/FPGA/SDRAM/SDRAM.v|
+!i113 1
+R7
+R8
+R9
+n@s@d@r@a@m
+vSdram_Control
+R1
+!i10b 1
+!s100 KPjQ[6gM7`<??1EO_2oFa3
+I1H>hO^jcBKFZLR@eGaiZ43
+R2
+R0
+w1551259122
+8E:/DE1-SoC/FPGA/SDRAM/sdram_control.v
+FE:/DE1-SoC/FPGA/SDRAM/sdram_control.v
+R4
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/DE1-SoC/FPGA/SDRAM/Sdram_Params.h|E:/DE1-SoC/FPGA/SDRAM/sdram_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/DE1-SoC/FPGA/SDRAM|E:/DE1-SoC/FPGA/SDRAM/sdram_control.v|
+!i113 1
+R7
+R8
+R9
+n@sdram_@control
+vSdram_PLL
+R1
+!i10b 1
+!s100 0a?a^LV5`Ra=d4;XI4@=Z0
+IOiG@ec3Z0glN<ioC00IoS0
+R2
+R0
+w1551176189
+8E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL_sim/Sdram_PLL.vo
+FE:/DE1-SoC/FPGA/SDRAM/Sdram_PLL_sim/Sdram_PLL.vo
+R10
+R5
+r1
+!s85 0
+31
+!s108 1551267058.000000
+!s107 E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL_sim/Sdram_PLL.vo|
+!s90 -reportprogress|300|E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL_sim/Sdram_PLL.vo|
+!i113 1
+R9
+n@sdram_@p@l@l
+vSdram_RD_FIFO
+R1
+!i10b 1
+!s100 ao:j0@Zc@>_3nA?]iA@o40
+IQCmOO:eJPBbLO=bClH]fY2
+R2
+R0
+w1551175662
+8E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v
+FE:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v
+Z11 L0 39
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/DE1-SoC/FPGA/SDRAM|E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v|
+!i113 1
+R7
+R8
+R9
+n@sdram_@r@d_@f@i@f@o
+vSdram_WR_FIFO
+R1
+!i10b 1
+!s100 kZKm=nzFhB6eFhE2UU9]]1
+IT[39L`99nYB]Mif0gmfUU2
+R2
+R0
+w1551175840
+8E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v
+FE:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/DE1-SoC/FPGA/SDRAM|E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v|
+!i113 1
+R7
+R8
+R9
+n@sdram_@w@r_@f@i@f@o
+vsegment
+R1
+!i10b 1
+!s100 ZW_Y<h]DiI@1m4]]<?G8:2
+IE?_4NW_hKa5_WO[9d4GFM1
+R2
+R0
+w1551184528
+8E:/DE1-SoC/FPGA/SDRAM/segment.v
+FE:/DE1-SoC/FPGA/SDRAM/segment.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/DE1-SoC/FPGA/SDRAM/segment.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/DE1-SoC/FPGA/SDRAM|E:/DE1-SoC/FPGA/SDRAM/segment.v|
+!i113 1
+R7
+R8
+R9

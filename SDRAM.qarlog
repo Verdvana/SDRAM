@@ -1,0 +1,43 @@
+Quartus Prime Archive log --	E:/DE1-SoC/FPGA/SDRAM/SDRAM.qarlog
+
+Archive:	E:/DE1-SoC/FPGA/SDRAM/SDRAM.qar
+Date:		Tue Feb 26 21:09:32 2019
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+	=========== Files Selected: ===========
+E:/DE1-SoC/DE1-SoC_Pin_Assignment.tcl
+E:/DE1-SoC/FPGA/SDRAM/PLL.cmp
+E:/DE1-SoC/FPGA/SDRAM/PLL.qip
+E:/DE1-SoC/FPGA/SDRAM/PLL.sip
+E:/DE1-SoC/FPGA/SDRAM/PLL.spd
+E:/DE1-SoC/FPGA/SDRAM/PLL.v
+E:/DE1-SoC/FPGA/SDRAM/PLL/PLL_0002.qip
+E:/DE1-SoC/FPGA/SDRAM/PLL/PLL_0002.v
+E:/DE1-SoC/FPGA/SDRAM/PLL_sim/PLL.vo
+E:/DE1-SoC/FPGA/SDRAM/SDRAM.qpf
+E:/DE1-SoC/FPGA/SDRAM/SDRAM.qsf
+E:/DE1-SoC/FPGA/SDRAM/SDRAM.v
+E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL.cmp
+E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL.qip
+E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL.sip
+E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL.spd
+E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL.v
+E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL/Sdram_PLL_0002.qip
+E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL/Sdram_PLL_0002.v
+E:/DE1-SoC/FPGA/SDRAM/Sdram_PLL_sim/Sdram_PLL.vo
+E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.qip
+E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO.v
+E:/DE1-SoC/FPGA/SDRAM/Sdram_RD_FIFO_bb.v
+E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.qip
+E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO.v
+E:/DE1-SoC/FPGA/SDRAM/Sdram_WR_FIFO_bb.v
+E:/DE1-SoC/FPGA/SDRAM/command.v
+E:/DE1-SoC/FPGA/SDRAM/control_interface.v
+E:/DE1-SoC/FPGA/SDRAM/sdram_control.v
+E:/DE1-SoC/FPGA/SDRAM/sdram_params.h
+E:/DE1-SoC/FPGA/SDRAM/segment.v
+d:/intelfpga/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 32 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,51 @@
+module command(
+			input					clk,			//时钟
+			input					rst_n,		//复位
+			input [22:0] 		saddr,		//地址输入
+			input 				nop,			//“nop”指令输入	
+			input					reada,		//“读”指令输入
+			input					writea,		//“写”指令输入
+			input					refresh,		//初始化“更新”指令输入
+			input					precharge,	//初始化“预充电”指令输入
+			input					load_mode,	//初始化“模式设定”指令输入
+			input					ref_req,		//正常读写时“更新”指令输入
+			input					init_req,	//初始化动作
+			input					pm_stop,		//整页存取模式结束
+					
+			output reg 			ref_ack,		//执行更新指令
+			output reg 			cm_ack,		//执行读写指令
+			output reg			oe,			//数据路径的选择
+			output reg [11:0] sa,			//SDRAM的行列地址
+			output reg [1:0]	ba,			//SDRAM的区块地址
+			output reg [1:0]	cs_n,			//SDRAM片选信号
+			output reg			cke,			//SDRAM时钟使能信号
+			output reg			ras_n,		//SDRAM的ras
+			output reg			cas_n,		//SDRAM的cas
+			output reg			we_n			//SDRAM写入或读出控制
+				
+			
+);
+
+reg do_reada,do_writea,do_refresh,do_precharge,do_load_mode,do_initial;
+													
+reg 					command_done;
+reg [7:0]			command_delay;
+reg [1:0]			rw_shift;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
